@@ -1,0 +1,33 @@
+{
+  "unity_version": "2021.3.56f2",
+  "source_files": {
+    "Managed/Assembly-CSharp.dll": {
+      "bytes": 1828352,
+      "sha256": "019c8d04948bb43907d01d4a635ddf517b8d686e0d82b5065b681061db9b4465"
+    },
+    "globalgamemanagers": {
+      "bytes": 337764,
+      "sha256": "c9c86f22bd7accd886a74fe03d509893266e1d4f336a45bf4184fa3d01793c60"
+    },
+    "globalgamemanagers.assets": {
+      "bytes": 7893492,
+      "sha256": "a16cca9f4fbccf955651c8e2b73f7ada356f8d9acd4e351c6af6dae8f494e843"
+    },
+    "level4": {
+      "bytes": 12884692,
+      "sha256": "922410448fee451ae6b91476a80e67218abef51a7fd21f05c83185ccc9a93f5a"
+    },
+    "level6": {
+      "bytes": 95563748,
+      "sha256": "77271fe7f71f47476e29efc8118c0eb79bc594258b0affa2601ed6704e90c873"
+    },
+    "level13": {
+      "bytes": 12797204,
+      "sha256": "c368fdb9e50f153cb17f4290220c4083b892d02af8c680f1130b8df7ebeea954"
+    },
+    "level15": {
+      "bytes": 117558628,
+      "sha256": "b9caf8f4492a3fec30d466bf07347217b893f2fd6afcf83e462f6f3d080bcd04"
+    }
+  }
+}

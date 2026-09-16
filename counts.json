@@ -1,0 +1,45 @@
+{
+  "Autumn": {
+    "Chest": 49,
+    "Quest pickup": 54,
+    "NPC": 231,
+    "Polaroid": 15,
+    "Mushroom": 252,
+    "Shrine": 77,
+    "Egg": 35,
+    "Bolt": 335,
+    "Juice": 25,
+    "Quest giver": 22,
+    "Quest target": 9,
+    "Suitcase": 22,
+    "Clothing source": 16
+  },
+  "Winter": {
+    "Chest": 44,
+    "NPC": 200,
+    "Mushroom": 240,
+    "Juice": 34,
+    "Quest pickup": 12,
+    "Shrine": 118,
+    "Bolt": 370,
+    "Egg": 37,
+    "Quest giver": 21,
+    "Quest target": 7,
+    "Suitcase": 23,
+    "Polaroid": 15,
+    "Clothing source": 14
+  },
+  "Autumn tutorial": {
+    "Chest": 1,
+    "NPC": 7,
+    "Bolt": 7,
+    "Suitcase": 1,
+    "Mushroom": 9,
+    "Shrine": 2
+  },
+  "Winter tutorial": {
+    "Bolt": 3,
+    "NPC": 2,
+    "Mushroom": 7
+  }
+}
