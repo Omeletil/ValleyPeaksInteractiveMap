@@ -13353,9 +13353,7 @@
         }
       ],
       "container_id": null,
-      "notes": [
-        "The quest description names Mt. Croob; this marker follows the game's stored quest-item location near town."
-      ]
+      "notes": []
     },
     {
       "id": "level6:201766",
@@ -20858,9 +20856,7 @@
         }
       ],
       "container_id": null,
-      "notes": [
-        "The quest description names Mt. Croob; this marker follows the game's stored quest-item location near town."
-      ],
+      "notes": [],
       "saveID": 3,
       "save_id_kind": "initial value; runtime may replace it"
     },
@@ -69668,8 +69664,16 @@
       "label": "Find Leanard's Bones!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:209904",
-      "description": "Find 10 bones at archeological sites!",
-      "return_description": "Return to Leanard!",
+      "description": "Find Leanard's Bones at bone sites around Valley Peaks!",
+      "return_description": "Return to Leanard near Mt. Anatol!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Find Leanard's Bones!</wave>",
+        "description": "- Find Leanard's Bones at bone sites around Valley Peaks!",
+        "return_description": "- Return to Leanard near Mt. Anatol!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201775"
@@ -69696,8 +69700,16 @@
       "label": "Greebles Seeds!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:211716",
-      "description": "Find 5 seed packets for Greeble!",
-      "return_description": "Return to Greeble!",
+      "description": "Find Greeble seed packs located in towns!",
+      "return_description": "Return to Greeble near Hollow Town!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Greebles Seeds!</wave>",
+        "description": "- Find Greeble seed packs located in towns!",
+        "return_description": "- Return to Greeble near Hollow Town!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:212366"
@@ -69719,8 +69731,16 @@
       "label": "Lucy's Lost Bracelet!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:197478",
-      "description": "Find Lucy's Friendship bracelet lost on Mt. Hollow!",
-      "return_description": "Return to Lucy!",
+      "description": "Find Lucy's lost friendship bracelet on Mt. Hollow!",
+      "return_description": "Return to Lucy in Hollow Town!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Lucy's Lost Bracelet!</wave>",
+        "description": "- Find Lucy's lost friendship bracelet on Mt. Hollow!",
+        "return_description": "- Return to Lucy in Hollow Town!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201831"
@@ -69738,8 +69758,16 @@
       "label": "Deliver Clamper's Book!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:204150",
-      "description": "Deliver Pine's book to Clamper in book town!",
-      "return_description": "- Return to Lucy in Hollow Town!",
+      "description": "Find Clamper in Book Town and deliver her prized book!",
+      "return_description": "",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Deliver Clamper's Book!</wave>",
+        "description": "- Find Clamper in Book Town and deliver her prized book!",
+        "return_description": "- Return to Lucy in Hollow Town!"
+      },
+      "journal_return_visible": false,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:212426"
@@ -69754,11 +69782,24 @@
       "scene": "Autumn",
       "key": "LostFlashlight",
       "quest_id": 2,
-      "label": "Mickey's Missing Flashlight!",
+      "label": "Mikey's Missing Flashlight!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:210050",
-      "description": "Find Mickey's Friendship bracelet lost in the Mushroom Forest!!",
-      "return_description": "Return to Mikey!",
+      "description": "Find Mikey's lost flashlight in the Mushroom Forest!",
+      "return_description": "Return to Mikey in Pottery Town!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Mickey's Missing Flashlight!</wave>",
+        "description": "- Find Mickey's lost flashlight in the Mushroom Forest!",
+        "return_description": "- Return to Mickey in Pottery Town!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [
+        {
+          "original": "Mickey",
+          "display": "Mikey"
+        }
+      ],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201856"
@@ -69776,8 +69817,16 @@
       "label": "Crockery Collection!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:197467",
-      "description": "- Collect all of Alexander's Crockery at Kid Camp!",
-      "return_description": "- Return to Alexander at Kid Camp!",
+      "description": "Collect all of Alexander's Crockery at Kid Camp!",
+      "return_description": "Return to Alexander at Kid Camp!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Crockery Collection!</wave>",
+        "description": "- Collect all of Alexander's Crockery at Kid Camp!",
+        "return_description": "- Return to Alexander at Kid Camp!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201873"
@@ -69822,8 +69871,21 @@
       "label": "Carl's Missing Bracelet!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:204809",
-      "description": "Find Carl's Friendship bracelet lost on Mt. Croob!",
-      "return_description": "Return to Carl!",
+      "description": "Find Carl's lost bracelet near Hollow Town!",
+      "return_description": "Return to Carl in the Hollow Town!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Carl's Missing Bracelet!</wave>",
+        "description": "- Find Carl's lost bracelet near Hollow Town!",
+        "return_description": "- Return to Carl  in the Hollow Townt!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [
+        {
+          "original": "Hollow Townt",
+          "display": "Hollow Town"
+        }
+      ],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201762"
@@ -69841,8 +69903,16 @@
       "label": "Deliver Bob's Beans!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:210110",
-      "description": "Deliver the bean sack to Bob the boss at the top of Mt. Tree!",
-      "return_description": "- Return to Gerard near Mt. Anatol!",
+      "description": "Deliver coffee beans to Bob on top of Mt.Tree!",
+      "return_description": "",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Deliver Bob's Beans!</wave>",
+        "description": "- Deliver coffee beans to Bob on top of Mt.Tree!",
+        "return_description": "- Return to Gerard near Mt. Anatol!"
+      },
+      "journal_return_visible": false,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201817"
@@ -69857,11 +69927,24 @@
       "scene": "Autumn",
       "key": "RepairBalloon",
       "quest_id": 13,
-      "label": "Repair Andrew's Balloon!",
+      "label": "Repair Ed's Balloon!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:207745",
-      "description": "Repair Brian's windmill!",
-      "return_description": "Return to Brian!",
+      "description": "Repair the deflated balloon for Ed at the Airport!",
+      "return_description": "Return to Ed at the Airport!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Repair Andrew's Balloon!</wave>",
+        "description": "- Repair the deflated balloon for Ed at the Airport!",
+        "return_description": "- Return to Ed at the Airport!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [
+        {
+          "original": "Andrew",
+          "display": "Ed"
+        }
+      ],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201793"
@@ -69877,8 +69960,16 @@
       "label": "Bike Repair!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:197565",
-      "description": "Repair Keira's jar in Wall Townl!",
-      "return_description": "Return to Keira!",
+      "description": "Repair Pike's bike in the leafy forest!",
+      "return_description": "Return to Pike in the Leafy Forest!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Bike Repair!</wave>",
+        "description": "- Repair Pike's bike in the leafy forest!",
+        "return_description": "- Return to Pike in the Leafy Forest!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201862"
@@ -69894,8 +69985,16 @@
       "label": "Find the Wandering Clowns!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:204864",
-      "description": "- Find the 3 wandering clowns around Valley Peaks!",
-      "return_description": "- Return to Goose at the circus!",
+      "description": "Find the 3 wandering clowns around Valley Peaks!",
+      "return_description": "Return to Goose at the circus!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Find the Wandering Clowns!</wave>",
+        "description": "- Find the 3 wandering clowns around Valley Peaks!",
+        "return_description": "- Return to Goose at the circus!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:212270"
@@ -69915,8 +70014,16 @@
       "label": "Nickolai's Missing Glasses!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:199695",
-      "description": "Find Nickolai's glasses at the Egg Farm!",
-      "return_description": "Return to Nickolai!",
+      "description": "Find Nickolai's lost glasses at Roston Farm!",
+      "return_description": "Return to Nickolai at Windhook Farm!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Nickolai's Missing Glasses!</wave>",
+        "description": "- Find Nickolai's lost glasses at Roston Farm!",
+        "return_description": "- Return to Nickolai  at Windhook Farm!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:208836"
@@ -69931,11 +70038,24 @@
       "scene": "Autumn",
       "key": "LostMustache",
       "quest_id": 15,
-      "label": "Gerad's Lost Moustache!",
+      "label": "Gerard's Lost Moustache!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:198342",
-      "description": "Find Lucy's Friendship bracelet lost on Mt. Hollow!",
-      "return_description": "Return to Lucy!",
+      "description": "Find Gerard's moustache near Mt. Brevis!",
+      "return_description": "Return to Gerard near Mt. Anatol!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Gerad's Lost Moustache!</wave>",
+        "description": "- Find Gerad's moustache near Mt. Brevis!",
+        "return_description": "- Return to Gerard near Mt. Anatol!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [
+        {
+          "original": "Gerad",
+          "display": "Gerard"
+        }
+      ],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201833"
@@ -69953,8 +70073,16 @@
       "label": "Pizza Delivery!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:202683",
-      "description": "Deliver Pine's book to Clamper in book town!",
-      "return_description": "- Return to Isobel in the Mushroom Forest!",
+      "description": "Deliver Max's pizza to Loof at the Windmill!",
+      "return_description": "",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Pizza Delivery!</wave>",
+        "description": "- Deliver Max's pizza to Loof at the Windmill!",
+        "return_description": "- Return to Isobel in the Mushroom Forest!"
+      },
+      "journal_return_visible": false,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:206517"
@@ -69972,8 +70100,16 @@
       "label": "Gather Mushrooms!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:211230",
-      "description": "- Gather blue mushrooms in the Mushroom Forest for Isobel!",
-      "return_description": "- Return to Isobel in the Mushroom Forest!",
+      "description": "Gather blue mushrooms in the Mushroom Forest for Isobel!",
+      "return_description": "Return to Isobel in the Mushroom Forest!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Gather Mushrooms!</wave>",
+        "description": "- Gather blue mushrooms in the Mushroom Forest for Isobel!",
+        "return_description": "- Return to Isobel in the Mushroom Forest!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:212408"
@@ -69995,8 +70131,16 @@
       "label": "Return Gina's Ring!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:203177",
-      "description": "Deliver Gina's ring to Mikayla in Castle Town!",
-      "return_description": "- Return to Lucy in Hollow Town!",
+      "description": "Find Mikayla in Castle Town and deliver Gina's ring!",
+      "return_description": "",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Return Gina's Ring!</wave>",
+        "description": "- Find Mikayla in Castle Town and deliver Gina's ring!",
+        "return_description": "- Return to Lucy in Hollow Town!"
+      },
+      "journal_return_visible": false,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:208830"
@@ -70014,8 +70158,16 @@
       "label": "Find Thea's Earrings!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:203636",
-      "description": "Find Thea's earrings lost in the lake!",
-      "return_description": "Return to Thea!",
+      "description": "Find Thea's earrings near the Waterfall!",
+      "return_description": "Return to Thea near the Waterfall!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Find Thea's Earrings!</wave>",
+        "description": "- Find Thea's earrings near the Waterfall!",
+        "return_description": "- Return to Thea near the Waterfall!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201753"
@@ -70033,8 +70185,16 @@
       "label": "Broken Windmill!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:210060",
-      "description": "Repair Brian's windmill!",
-      "return_description": "Return to Brian!",
+      "description": "Repair Brian's broken windmill on Mt Thunder!",
+      "return_description": "Return to Brian on Mt Thunder!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Broken Windmill!</wave>",
+        "description": "- Repair Brian's broken windmill on Mt Thunder!",
+        "return_description": "- Return to Brian on Mt Thunder!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:206539"
@@ -70050,8 +70210,16 @@
       "label": "Deliver Crasher's Mail!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:207496",
-      "description": "Deliver mail to Crasher at the mechanics!",
-      "return_description": "Return to Lucy!",
+      "description": "Find Crasher at the mechanics hub and deliver her mail!",
+      "return_description": "",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Deliver Crasher's Mail!</wave>",
+        "description": "- Find Crasher at the mechanics hub and deliver her mail!",
+        "return_description": "- Return to Lucy in Hollow Town!"
+      },
+      "journal_return_visible": false,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:206524"
@@ -70069,8 +70237,16 @@
       "label": "Hat Delivery!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:204338",
-      "description": "Give Croob his hat a on Mt. Thunder!",
-      "return_description": "- Return to Isobel in the Mushroom Forest!",
+      "description": "Find Croob on Mt. Thunder and deliver his hat!",
+      "return_description": "",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Hat Delivery!</wave>",
+        "description": "- Find Croob on Mt. Thunder and deliver his hat!",
+        "return_description": "- Return to Isobel in the Mushroom Forest!"
+      },
+      "journal_return_visible": false,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:206526"
@@ -70088,8 +70264,16 @@
       "label": "Repair Keira's Jar!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:205201",
-      "description": "Repair Keira's jar in Wall Townl!",
-      "return_description": "Return to Keira!",
+      "description": "Repair Keira's jar in Wall Town!",
+      "return_description": "Return to Keira in Wall Town!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Repair Keira's Jar!</wave>",
+        "description": "- Repair Keira's jar in Wall Town!",
+        "return_description": "- Return to Keira in Wall Town!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:205380"
@@ -70105,8 +70289,16 @@
       "label": "One Armed Ascent!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level6:203859",
-      "description": "- Climb the Red Route of Mt Thunder with just your left arm!",
-      "return_description": "- Return to Caroline on top of Mt Thunder!",
+      "description": "Climb the Red Route of Mt Thunder with just your left arm!",
+      "return_description": "Return to Caroline on top of Mt Thunder!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>One Armed Ascent!</wave>",
+        "description": "- Climb the Red Route of Mt Thunder with just your left arm!",
+        "return_description": "- Return to Caroline on top of Mt Thunder!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level6:201839"
@@ -70122,8 +70314,16 @@
       "label": "Lost Guitar!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:245787",
-      "description": "Find Nickolai's glasses at the Egg Farm!",
-      "return_description": "Return to Nickolai!",
+      "description": "Find Sim's lost guitar somewhere in Castle Town!",
+      "return_description": "Return to Sim at the Punk Camp!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Lost Guitar!</wave>",
+        "description": "- Find Sim's lost guitar somewhere in Castle Town!",
+        "return_description": "- Return to Sim at the Punk Camp!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:242833"
@@ -70141,8 +70341,16 @@
       "label": "Broken Wind Turbine!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:243852",
-      "description": "- Turn on the turbine by finding the code in Book Town!",
-      "return_description": "- Return to Tobin near the turbine!",
+      "description": "Turn on the turbine by finding the code in Book Town!",
+      "return_description": "Return to Tobin near the turbine!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Broken Wind Turbine!</wave>",
+        "description": "- Turn on the turbine by finding the code in Book Town!",
+        "return_description": "- Return to Tobin near the turbine!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:240667"
@@ -70158,8 +70366,16 @@
       "label": "Nickolai's Glasses!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:237545",
-      "description": "Find Nickolai's glasses at the Egg Farm!",
-      "return_description": "Return to Nickolai!",
+      "description": "Find Nickolai's lost glasses at the old windmill!",
+      "return_description": "Return to Nickolai at WindHook Farm!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Nickolai's Glasses!</wave>",
+        "description": "- Find Nickolai's lost glasses at the old windmill!",
+        "return_description": "- Return to Nickolai at WindHook Farm!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:242841"
@@ -70177,8 +70393,16 @@
       "label": "Forgotten Blanket!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:237525",
-      "description": "Find Nickolai's glasses at the Egg Farm!",
-      "return_description": "Return to Nickolai!",
+      "description": "Find Loocy's lost blanket at a camp near Wall Town!",
+      "return_description": "Return to Loocy at the Winter Festival grounds near Mt Brevis!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Forgotten Blanket!</wave>",
+        "description": "- Find Loocy's lost blanket at a camp near Wall Town!",
+        "return_description": "- Return to Loocy at the Winter Festival grounds near Mt Brevis!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:234861"
@@ -70196,8 +70420,16 @@
       "label": "Pot Lovers!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:245464",
-      "description": "- Find three pot loving customers on the Plateau for Hof!",
-      "return_description": "- Return to Hof on the Plateau!",
+      "description": "Find three pot loving customers on the Plateau for Hof!",
+      "return_description": "Return to Hof on the Plateau!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Pot Lovers!</wave>",
+        "description": "- Find three pot loving customers on the Plateau for Hof!",
+        "return_description": "- Return to Hof on the Plateau!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:234792"
@@ -70217,8 +70449,16 @@
       "label": "Present Delivery!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:250206",
-      "description": "Deliver Gina's ring to Mikayla in Castle Town!",
-      "return_description": "- Return to Isobel in the Mushroom Forest!",
+      "description": "Deliver Gina's present to Mica at the Depot by the river!",
+      "return_description": "",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Present Delivery!</wave>",
+        "description": "- Deliver Gina's present to Mica at the Depot by the river!",
+        "return_description": "- Return to Isobel in the Mushroom Forest!"
+      },
+      "journal_return_visible": false,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:242852"
@@ -70236,8 +70476,16 @@
       "label": "Rescue Teemo!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:247557",
-      "description": "Deliver Gina's ring to Mikayla in Castle Town!",
-      "return_description": "- Speak to Teemo in Book Town!",
+      "description": "Find Lily in Book Town and give her Teemo's letter!",
+      "return_description": "",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Rescue Teemo!</wave>",
+        "description": "- Find Lily in Book Town and give her Teemo's letter!",
+        "return_description": "- Speak to Teemo in Book Town!"
+      },
+      "journal_return_visible": false,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:239121"
@@ -70255,8 +70503,16 @@
       "label": "Missing Matches!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:233988",
-      "description": "Find Nickolai's glasses at the Egg Farm!",
-      "return_description": "Return to Nickolai!",
+      "description": "Find Gaz's matches somewhere on Mt Croob!",
+      "return_description": "Return to Gaz on Mt Croob!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Missing Matches!</wave>",
+        "description": "- Find Gaz's matches somewhere on Mt Croob!",
+        "return_description": "- Return to Gaz on Mt Croob!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:234868"
@@ -70274,8 +70530,16 @@
       "label": "Pliny's Tractor",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:229888",
-      "description": "Repair Brian's windmill!",
-      "return_description": "Return to Brian!",
+      "description": "Fix Pliny's broken tractor near the climbing center!",
+      "return_description": "Return to Pliny near the climbing center!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Pliny's Tractor</wave>",
+        "description": "- Fix Pliny's broken tractor near the climbing center!",
+        "return_description": "- Return to Pliny near the climbing center!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:240636"
@@ -70291,8 +70555,21 @@
       "label": "Missing Book!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:246933",
-      "description": "Find Nickolai's glasses at the Egg Farm!",
-      "return_description": "Return to Nickolai!",
+      "description": "Find Anna's missing book in Book Town!",
+      "return_description": "Return to Anna at her hut near Mt Tree!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Missing Book!</wave>",
+        "description": "- Find Anna's missing book in Book Town!",
+        "return_description": "- Return Anna at her hut near Mt Tree!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [
+        {
+          "original": "Return Anna",
+          "display": "Return to Anna"
+        }
+      ],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:242858"
@@ -70310,8 +70587,16 @@
       "label": "Scone's Lost Matches!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:230548",
-      "description": "Find Nickolai's glasses at the Egg Farm!",
-      "return_description": "Return to Nickolai!",
+      "description": "Find Scone's lost matches in Hollow Town!",
+      "return_description": "Return to Scone near Mt Croob!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Scone's Lost Matches!</wave>",
+        "description": "- Find Scone's lost matches in Hollow Town!",
+        "return_description": "- Return to Scone near Mt Croob!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:234838"
@@ -70329,8 +70614,16 @@
       "label": "Crasher's Lost Hat!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:243902",
-      "description": "Find Nickolai's glasses at the Egg Farm!",
-      "return_description": "Return to Nickolai!",
+      "description": "Find Crasher's lost hat at the artist camp near Wall Town!",
+      "return_description": "Return to Crasher under Mt Brevis!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Crasher's Lost Hat!</wave>",
+        "description": "- Find Crasher's lost hat at the artist camp near Wall Town!",
+        "return_description": "- Return to Crasher under Mt Brevis!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:242811"
@@ -70348,8 +70641,16 @@
       "label": "Rescue the Queen!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:245690",
-      "description": "- Find and rescue the Queen at one of the bone sites!",
-      "return_description": "- Return to the Bone King near Mt Thunder!",
+      "description": "Find and rescue the Queen at one of the bone sites!",
+      "return_description": "Return to the Bone King near Mt Thunder!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Rescue the Queen!</wave>",
+        "description": "- Find and rescue the Queen at one of the bone sites!",
+        "return_description": "- Return to the Bone King near Mt Thunder!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:247029"
@@ -70367,8 +70668,16 @@
       "label": "Coolio's Missing Hat!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:241324",
-      "description": "Find Carl's Friendship bracelet lost on Mt. Croob!",
-      "return_description": "Return to Carl!",
+      "description": "Find Coolio's missing hat in Book Town!",
+      "return_description": "Return to Coolio near Mt Tree!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Coolio's Missing Hat!</wave>",
+        "description": "- Find Coolio's missing hat in Book Town!",
+        "return_description": "- Return to Coolio near Mt Tree!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:247038"
@@ -70386,8 +70695,16 @@
       "label": "Lost Nose!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:245416",
-      "description": "Find Nickolai's glasses at the Egg Farm!",
-      "return_description": "Return to Nickolai!",
+      "description": "Find Sia's carrot somewhere in the Snowman Camp!",
+      "return_description": "Return to Sia at the Snowman Camp!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Lost Nose!</wave>",
+        "description": "- Find Sia's carrot somewhere in the Snowman Camp!",
+        "return_description": "- Return to Sia at the Snowman Camp!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:247144"
@@ -70405,8 +70722,16 @@
       "label": "Hat Delivery!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:244228",
-      "description": "Deliver Gina's ring to Mikayla in Castle Town!",
-      "return_description": "- Find Snee on the Plateau!",
+      "description": "Deliver Snee's hat to Jessy on the Mini Plateau!",
+      "return_description": "",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Hat Delivery!</wave>",
+        "description": "- Deliver Snee's hat to Jessy on the Mini Plateau!",
+        "return_description": "- Find Snee on the Plateau!"
+      },
+      "journal_return_visible": false,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:247049"
@@ -70424,8 +70749,16 @@
       "label": "Hopper's Lost Binoculars!!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:246611",
-      "description": "- Find Hopper's lost binoculars on Mt Tree!",
-      "return_description": "- Return to Hopper near Mt Tree!",
+      "description": "Find Hopper's lost binoculars on Mt Tree!",
+      "return_description": "Return to Hopper near Mt Tree!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Hopper's Lost Binoculars!!</wave>",
+        "description": "- Find Hopper's lost binoculars on Mt Tree!",
+        "return_description": "- Return to Hopper near Mt Tree!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:239125"
@@ -70443,8 +70776,16 @@
       "label": "Time Travel!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:243928",
-      "description": "Repair Brian's windmill!",
-      "return_description": "Return to Brian!",
+      "description": "Build the time travel machine for Andrew at the Airport near Mt Thunder!",
+      "return_description": "Return to Andrew at the Airport near Mt Thunder!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Time Travel!</wave>",
+        "description": "- Build the time travel machine for Andrew at the Airport near Mt Thunder!",
+        "return_description": "- Return to Andrew at the Airport near Mt Thunder!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:239109"
@@ -70460,8 +70801,16 @@
       "label": "Kathy's Backpack!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:250741",
-      "description": "Find Carl's Friendship bracelet lost on Mt. Croob!",
-      "return_description": "Return to Carl!",
+      "description": "Find Kathy's backpack on Mt Crol!",
+      "return_description": "Return to Kathy on Mt Crol!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Kathy's Backpack!</wave>",
+        "description": "- Find Kathy's backpack on Mt Crol!",
+        "return_description": "- Return to Kathy on Mt Crol!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:247065"
@@ -70479,8 +70828,16 @@
       "label": "Samia's Lost Teddy!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:232654",
-      "description": "Find Nickolai's glasses at the Egg Farm!",
-      "return_description": "Return to Nickolai!",
+      "description": "Find Samia's Teddy on Mt Crag!",
+      "return_description": "Return to Samia on MT Crag!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Samia's Lost Teddy!</wave>",
+        "description": "- Find Samia's Teddy on Mt Crag!",
+        "return_description": "- Return to Samia on MT Crag!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:242819"
@@ -70498,8 +70855,16 @@
       "label": "Building with bones!",
       "label_source": "Active QuestLogControl -> QuestPanel -> TMP text",
       "panel_id": "level15:230740",
-      "description": "Repair Brian's windmill!",
-      "return_description": "Return to Brian!",
+      "description": "Build Leanard's Xylophone at the archeologist's hut near Mt Brevis!",
+      "return_description": "Return to Leanard at the archeologist's hut!",
+      "description_source": "Active QuestLogControl -> QuestPanel -> TMP text",
+      "journal_text": {
+        "title": "<wave a=0.2>Building with bones!</wave>",
+        "description": "- Build Leanard's Xylophone at the archeologist's hut near Mt Brevis!",
+        "return_description": "- Return to Leanard at the archeologist's hut!"
+      },
+      "journal_return_visible": true,
+      "text_corrections": [],
       "show_items_from_start": true,
       "giver_ids": [
         "level15:234750"
