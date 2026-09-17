@@ -4,6 +4,10 @@ Open **index.html** in a browser. All map data and images are local; no server o
 
 The interactive view covers the two main worlds. Select Autumn or Winter, choose categories, search by NPC/quest/object name, then click a marker. Selecting a quest participant also shows linked quest givers, pickups, targets and repair sites. Drag to pan, scroll to zoom, or use the zoom buttons. Height is the original world Y coordinate, which helps distinguish mountain and ground-level locations.
 
+Use **XYZ** beside **Fit map** to turn on the cursor coordinate readout. A crosshair marks the point being measured. Empty map areas show **X and Z**, with **Y —** because the map image contains no height data. Hover a marker to snap the readout and crosshair to that object's exact **X, Y and Z**. On a touchscreen, tap a map point or marker. The readout follows zoom and pan, and the XYZ button turns it off again. Marker Y is the object's stored elevation, not a calculated teleport landing height.
+
+The game's built-in debug console uses **setTele &lt;slot&gt;** to record your current position and **tele &lt;slot&gt;** to return to it; it does not accept an arbitrary XYZ destination. Its teleport routine uses the stored height directly, without snapping to the ground. These coordinates are reference information, not a guarantee of a safe player landing point.
+
 ## Completion tracking
 
 Quest givers, polaroids, juices, repairables, stamp-card shops, gacha machines and minigames have completion checkboxes in their marker details. Marking a quest giver records that quest as completed. The sidebar shows progress for the selected season; **Hide completed** removes completed markers from these seven categories. Completion marks are manual; completing a quest does not automatically mark linked pickups.
@@ -44,9 +48,9 @@ Shop locations use the physical card displays referenced by their shop controlle
 
 ## Minigames
 
-Select **Minigames** to show **eight verified entry points**, four per season, covering six achievement types. Markers sit at the NPC who starts the activity. They include the host's name, instructions and the achievement requirement.
+Select **Minigames** to show **ten verified entry points**, six in Autumn and four in Winter, covering eight achievement types. Markers sit at the NPC or lever that starts the activity. They include instructions, any verified unlock requirements and the achievement requirement.
 
-| Minigame | Season | Host | Achievement requirement |
+| Minigame | Season | Start location | Achievement requirement |
 | --- | --- | --- | --- |
 | Bouldering | Autumn | Pete | Finish the third course; round time limits are 33, 30 and 26 seconds |
 | Pumpkin hunt | Both | Toothless | Win the third round; collect 5, then 8, then 10 pumpkins within 50 seconds per round |
@@ -54,20 +58,28 @@ Select **Minigames** to show **eight verified entry points**, four per season, c
 | Speed climb | Both | Basher | Finish rounds in under 12, 10 and 8 seconds |
 | Memory game | Winter | Basher | Win three rounds with sequences of 3, 5 and 7 rocks |
 | Tractor race | Winter | Cooper | Win three races |
+| Shooting range | Autumn | Lever at the elevated balloon destination | Shoot all three targets in each of three rounds, with five shots per round |
+| Whack-a-Goose | Autumn | Lever beside the game | Win three rounds, scoring at least 12 each time |
+
+**Shooting range:** complete **Repair Ed's Balloon!** using the spanner and **5 bolts**, then start Andrew's balloon flight. The range activates when the flight finishes. Its start lever is on the elevated platform at **X −560.87, Z 120.21, height 178.65**; the ground-level balloon repair is at **X −568.24, Z 116.53**. Marker details link to both the repair and Ed's quest.
+
+**Whack-a-Goose:** complete Goose's **Find the Wandering Clowns!** quest by finding the three clowns and returning to Goose. Then use the lever at **X −677.78, Z −47.57**. Collect each round's mushroom prizes before starting the next round. Marker details link to Goose's quest.
+
+Selecting either minigame highlights its prerequisite quest giver and, for Shooting, the balloon repair. The repair and quest giver also link back to the minigame. These links work across category filters; **Hide completed** still applies. Quest, repair and achievement checkboxes remain independent.
 
 **Achievement earned** tracks the achievement. The hunt and speed climb each have entrances in both seasons, and their checkboxes share one achievement mark across those entrances. The game keeps separate seasonal challenge progress for those activities, but completing the qualifying challenge in either season awards the same achievement. Sidebar minigame progress counts distinct achievements available in the selected season.
 
-These locations reuse eight existing NPC records, preserving their IDs, names and positions and moving them from Other NPCs to Minigames. The source controllers directly reference these hosts. Shooting and Whack-a-Goose also appear in the code, but only inactive scene instances were found and their availability was not established; they are outside the mapped minigame coverage.
+Eight locations reuse existing NPC records, preserving their IDs, names and positions; the source controllers directly reference these hosts. The two additional locations use the physical start levers whose events call the Shooting and Whack-a-Goose controllers. Both games are initially inactive because they are unlocked through quests. Their inclusion is verified by the balloon flight's completion event and the clown quest's completion event, which activate the respective game objects.
 
 ## What was extracted
 
-- **2,426 exported markers** from the seasonal worlds, tutorial scenes and shared world scene. Counts include dormant objects, variants and rewards inside containers; repairs and gacha rolls have separate markers and completion states. Juice markers include only the 40 active collectible bottles.
+- **2,428 exported markers** from the seasonal worlds, tutorial scenes and shared world scene. Counts include dormant objects, variants and rewards inside containers; repairs and gacha rolls have separate markers and completion states. Juice markers include only the 40 active collectible bottles.
 - **43 directly referenced NPC quests**: 22 autumn quest givers and 21 winter quest givers, with names, journal titles, linked quest pickups/targets and positions.
 - Currency mushrooms, bolts, polaroids, juice pickups, chests, eggs, jars, suitcases and clothing-source components, plus other NPCs.
 - **20 juices per season**, with five bottles of each season's four flavours.
 - **105 repairable locations**: 96 visible in Autumn and 92 in Winter, including 83 shared locations. These include 48 permanent upgrades plus shortcuts, machines and quest/decorative repairs.
 - **16 stamp-card shops**, **eight shared gacha machines** and cosmetic-reward details on **12 existing quest givers**.
-- **Eight minigame entry points**, covering six achievement types, identified through their controller-to-host references.
+- **Ten minigame entry points**, covering eight achievement types, identified through controller-to-host references or start-lever events, with verified quest requirements for Shooting and Whack-a-Goose.
 - Initial active status, object/component IDs, hierarchy, container ancestry and selected alternate NPC positions.
 - Both actual game map backgrounds: 25 tiles per season, stitched to 2560×2560 pixels.
 
@@ -87,7 +99,7 @@ The assemblies describe object types and relationships; the Unity scene assets h
 
 NPC names come from `NpcBase.FrogName[0]`, falling back to the GameObject name. Quest titles and descriptions come from the initially active QuestLogControl and its indexed QuestPanel references to the journal TMP text. This matters because the winter scene also contains an inactive copy of the autumn journal with overlapping quest IDs. Unused descriptions stored on quest components are excluded because many contain copied text from unrelated quests. Display text removes journal formatting and corrects confirmed name typos; original journal strings remain in each quest's `journal_text` record, with changes listed in `text_corrections`. Gerard, Mikey and Ed use the names of their linked quest givers. Return instructions are omitted when their journal textbox is hidden, including unused delivery-quest text.
 
-All 2,580 original selected MonoBehaviour records, 222 additional repair-system records, 113 shop/gacha records and 51 minigame controller/helper records decoded to their exact serialized byte lengths. The minigame extraction also validated 15 linked components. Repair effects were checked against gameplay components under the repaired constructs; bridge and ladder roles also use their authored geometry and names. Shop prices come from the purchase component, and gacha costs, quest rewards and minigame achievement conditions were checked against the gameplay code. Quest-link checks found no unresolved direct quest-giver references or unlinked exported quest pickups. GameObject active flags were validated against the serialized layout. Browser checks cover searching, selecting linked locations, switching seasons, completion persistence, shared progress, filtering and mobile layout.
+All 2,580 original selected MonoBehaviour records, 222 additional repair-system records, 113 shop/gacha records and 51 minigame controller/helper records decoded to their exact serialized byte lengths. The original minigame extraction validated 15 linked components; the unlock audit additionally validated 11 relevant component records, including both start levers and the exact activation events. Repair effects were checked against gameplay components under the repaired constructs; bridge and ladder roles also use their authored geometry and names. Shop prices come from the purchase component, and gacha costs, quest rewards and minigame achievement conditions were checked against the gameplay code. Quest-link checks found no unresolved direct quest-giver references or unlinked exported quest pickups. GameObject active flags were validated against the serialized layout. Browser checks cover searching, selecting linked locations, switching seasons, completion persistence, shared progress, filtering and mobile layout.
 
 Positions reflect stored scene data and have not been independently checked during gameplay. The map includes inactive objects, child rewards, variants, and locations that may move or become available later. Transform positions identify scene objects; the physical collider centers matched those positions for three sampled quest pickups. Filtering by initial activity alone would discard quest items and other unlockable content.
 
