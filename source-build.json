@@ -28,6 +28,22 @@
     "level15": {
       "bytes": 117558628,
       "sha256": "b9caf8f4492a3fec30d466bf07347217b893f2fd6afcf83e462f6f3d080bcd04"
+    },
+    "level16": {
+      "bytes": 17100548,
+      "sha256": "689c5a41ed3c6978dadcddad8deb5c899552f9ad99ed8ba08137dd5707b93f16"
+    },
+    "sharedassets4.assets": {
+      "bytes": 54315832,
+      "sha256": "4d4648f4cabe7acff7b4089c7df53231bdc1230380a2678b1c17a3485b14f61f"
+    },
+    "StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle": {
+      "bytes": 26331,
+      "sha256": "92d6d99cab85ecd36cc68ba084969f9bc7580811a1ef86133fc9bea48ed41028"
+    },
+    "StreamingAssets/aa/StandaloneWindows64/localization-assets-shared_assets_all.bundle": {
+      "bytes": 19880,
+      "sha256": "91ce2efbfde0f1a6ed8c7869c4cfd0d913089a06a13db8a8c096a6aecf128d55"
     }
   }
 }

@@ -4,6 +4,10 @@ Open **index.html** in a browser. All map data and images are local; no server o
 
 The interactive view covers the two main worlds. Select Autumn or Winter, choose categories, search by NPC/quest/object name, then click a marker. Selecting a quest participant also shows linked quest givers, pickups, targets and repair sites. Drag to pan, scroll to zoom, or use the zoom buttons. Height is the original world Y coordinate, which helps distinguish mountain and ground-level locations.
 
+**Place names**, below the World selector, toggles the game's mountain, town and other area labels. Names are shown by default and follow the selected season. They are a separate map layer and do not affect marker filters or completion totals.
+
+There are **19 place labels per season**: 11 mountains and eight other areas. Their text comes from the game's English localization and their positions from its authored map-label objects, including RectTransform offsets. These are text placement anchors, not summit or teleport destinations. Inactive duplicate label groups are excluded.
+
 Use **XYZ** beside **Fit map** to turn on the cursor coordinate readout. A crosshair marks the point being measured. Empty map areas show **X and Z**, with **Y —** because the map image contains no height data. Hover a marker to snap the readout and crosshair to that object's exact **X, Y and Z**. On a touchscreen, tap a map point or marker. The readout follows zoom and pan, and the XYZ button turns it off again. Marker Y is the object's stored elevation, not a calculated teleport landing height.
 
 The game's built-in debug console uses **setTele &lt;slot&gt;** to record your current position and **tele &lt;slot&gt;** to return to it; it does not accept an arbitrary XYZ destination. Its teleport routine uses the stored height directly, without snapping to the ground. These coordinates are reference information, not a guarantee of a safe player landing point.
@@ -13,6 +17,18 @@ The game's built-in debug console uses **setTele &lt;slot&gt;** to record your c
 Quest givers, polaroids, juices, repairables, stamp-card shops, gacha machines and minigames have completion checkboxes in their marker details. Marking a quest giver records that quest as completed. The sidebar shows progress for the selected season; **Hide completed** removes completed markers from these seven categories. Completion marks are manual; completing a quest does not automatically mark linked pickups.
 
 Progress is saved in this browser for this website. It persists on reload, but does not sync between devices, browsers or website addresses. Clearing site data removes the marks. It is not included in the downloadable map data or hosting ZIP. If browser storage is unavailable, the page reports that changes cannot be saved.
+
+## Container contents
+
+Select a **Chest**, **Egg** or **Suitcase** to see its original contents, including quantities where verified. Decorative objects, NPCs and nested containers are described separately from collectible rewards. **Empty** means the inspected opening behavior exposes no meaningful contents; unconfirmed behavior is identified explicitly instead of being called empty.
+
+Selecting a container highlights its mapped contents. Expand **Item locations** to open an individual item's marker; **Released by** or **Inside** links return to its container. Some rewards are not separate map markers, so the contents list can describe more than the linked locations. These are the game's starting contents, independent of what has already been collected in a player's save.
+
+The audit covers **212 mapped containers**, including two tutorial records. All 94 chests originally contain two bolts. Of 72 eggs, 26 contain one mushroom and 46 are empty. The 46 suitcases include two empty cases; four have uncertain additional behavior, which is noted in their details. Contents are checked against the actual opening branches and animation events, including the sibling reward branch revealed by eggs. Decorative props are not cosmetic unlocks.
+
+## Juice colors
+
+All five bottles of a flavor share a marker color. Enabling **Juice** shows a color key for the selected season's four flavors. Autumn uses green for Apple, orange for Grapefruit, blue for Blueberry and red-pink for Cherry. Winter uses warm brown for Kiwi, bright yellow-green for Lime, crimson for Pomegranate and coral-pink for Watermelon. Fruit names remain in marker labels and details. The existing 20-bottle checklist per season and individual completion marks are preserved.
 
 ## Repairables
 
