@@ -37,6 +37,10 @@
       "bytes": 54315832,
       "sha256": "4d4648f4cabe7acff7b4089c7df53231bdc1230380a2678b1c17a3485b14f61f"
     },
+    "sharedassets13.assets": {
+      "bytes": 23415796,
+      "sha256": "0a2beadde7e3f700f60ba5260b9c8f3adfcc0a1b65f9568eb5ba7a42f7fc1465"
+    },
     "StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle": {
       "bytes": 26331,
       "sha256": "92d6d99cab85ecd36cc68ba084969f9bc7580811a1ef86133fc9bea48ed41028"

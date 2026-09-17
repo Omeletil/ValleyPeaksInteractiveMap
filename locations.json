@@ -79791,6 +79791,72 @@
       "achievement_id": "VP_WhackAGoose",
       "completion_id": "achievement:VP_WhackAGoose",
       "minigame_start_instructions": "Pull the lever to start a round. Collect the mushroom prizes from a winning round before starting the next one."
+    },
+    {
+      "id": "level15:236581",
+      "source_file": "level15",
+      "component_path_id": 236581,
+      "gameobject_path_id": 13630,
+      "component_type": "BookName",
+      "hierarchy": "Environment/Manmade/Residential/Towns/Town 2/book-open (5)",
+      "object_name": "book-open (5)",
+      "scene": "Winter",
+      "name": "Windmill Manual",
+      "category": "Quest target",
+      "name_source": "Windmill Manual dialogue and linked lever puzzle",
+      "x": -530.51001,
+      "y": 10.988,
+      "z": 248.729996,
+      "component_enabled": true,
+      "active_self": true,
+      "active_in_hierarchy": true,
+      "ancestor_gameobject_ids": [
+        8880,
+        3163,
+        3934,
+        8159,
+        3280
+      ],
+      "quests": [
+        {
+          "id": "level15:225595",
+          "role": "guide"
+        }
+      ],
+      "quest_guide_role": "clue",
+      "container_id": null,
+      "notes": []
+    },
+    {
+      "id": "level15:225483",
+      "source_file": "level15",
+      "component_path_id": 225483,
+      "gameobject_path_id": 3512,
+      "component_type": "LeverManager",
+      "hierarchy": "Windmill Generator Open/Lever Manager",
+      "object_name": "Lever Manager",
+      "scene": "Winter",
+      "name": "Wind turbine levers",
+      "category": "Quest target",
+      "name_source": "Windmill Manual dialogue and linked lever puzzle",
+      "x": -445.73999,
+      "y": 32.23,
+      "z": 65.669998,
+      "component_enabled": true,
+      "active_self": true,
+      "active_in_hierarchy": true,
+      "ancestor_gameobject_ids": [
+        21195
+      ],
+      "quests": [
+        {
+          "id": "level15:225595",
+          "role": "guide"
+        }
+      ],
+      "quest_guide_role": "puzzle",
+      "container_id": null,
+      "notes": []
     }
   ],
   "quests": [
@@ -80526,7 +80592,25 @@
       ],
       "pickup_ids": [],
       "target_ids": [],
-      "repair_ids": []
+      "repair_ids": [],
+      "guide_ids": [
+        "level15:236581",
+        "level15:225483"
+      ],
+      "guide": {
+        "steps": [
+          "Accept Tobin's quest near the wind turbine.",
+          "Find the open Windmill Manual in Book Town for the lever sequence.",
+          "Return to the turbine and pull the four levers in the order from the manual.",
+          "Speak to Tobin again after the turbine restarts."
+        ],
+        "note": "Accepting the quest enables the levers. Reading the manual provides the clue; you can skip the book if you already know the sequence.",
+        "solution": {
+          "numbering": "Count the levers from left to right, as described by the manual.",
+          "sequence": "1 → 3 → 2 → 4",
+          "note": "A wrong sequence resets after all four levers have been pulled. Leaving the lever area also resets an unfinished attempt."
+        }
+      }
     },
     {
       "id": "level15:225744",

@@ -2,7 +2,7 @@
 
 Open **index.html** in a browser. All map data and images are local; no server or game modification is needed. Keep the accompanying files in the same folder. To publish the map, upload the folder's contents to a static website host.
 
-The interactive view covers the two main worlds. Select Autumn or Winter, choose categories, search by NPC/quest/object name, then click a marker. Selecting a quest participant also shows linked quest givers, pickups, targets and repair sites. Drag to pan, scroll to zoom, or use the zoom buttons. Height is the original world Y coordinate, which helps distinguish mountain and ground-level locations.
+The interactive view covers the two main worlds. Select Autumn or Winter, choose categories, search by NPC/quest/object name, then click a marker. Selecting a quest participant also shows linked quest givers, pickups, targets, repair sites and mapped clues. Drag to pan, scroll to zoom, or use the zoom buttons. Height is the original world Y coordinate, which helps distinguish mountain and ground-level locations.
 
 **Place names**, below the World selector, toggles the game's mountain, town and other area labels. Names are shown by default and follow the selected season. They are a separate map layer and do not affect marker filters or completion totals.
 
@@ -29,6 +29,12 @@ The audit covers **212 mapped containers**, including two tutorial records. All 
 ## Juice colors
 
 All five bottles of a flavor share a marker color. Enabling **Juice** shows a color key for the selected season's four flavors. Autumn uses green for Apple, orange for Grapefruit, blue for Blueberry and red-pink for Cherry. Winter uses warm brown for Kiwi, bright yellow-green for Lime, crimson for Pomegranate and coral-pink for Watermelon. Fruit names remain in marker labels and details. The existing 20-bottle checklist per season and individual completion marks are preserved.
+
+## Quest clues
+
+Winter's **Broken Wind Turbine!** links Tobin to the **Windmill Manual** in Book Town and the **Wind turbine levers**. Selecting any of these three locations highlights the others and provides navigation links, even across category filters. The book and lever panel use the **Quest targets** category and do not add completion checkboxes.
+
+The quest guide explains the steps; **Show lever solution** reveals the sequence only when expanded. Accepting Tobin's quest enables the levers. The book supplies the clue but does not set an unlock flag, so reading it is optional if the sequence is already known. After restarting the turbine, return to Tobin. The book's dialogue, programmed lever order and puzzle-to-quest completion event were checked together.
 
 ## Repairables
 
@@ -89,7 +95,7 @@ Eight locations reuse existing NPC records, preserving their IDs, names and posi
 
 ## What was extracted
 
-- **2,428 exported markers** from the seasonal worlds, tutorial scenes and shared world scene. Counts include dormant objects, variants and rewards inside containers; repairs and gacha rolls have separate markers and completion states. Juice markers include only the 40 active collectible bottles.
+- **2,430 exported markers** from the seasonal worlds, tutorial scenes and shared world scene. Counts include dormant objects, variants and rewards inside containers; repairs and gacha rolls have separate markers and completion states. Juice markers include only the 40 active collectible bottles.
 - **43 directly referenced NPC quests**: 22 autumn quest givers and 21 winter quest givers, with names, journal titles, linked quest pickups/targets and positions.
 - Currency mushrooms, bolts, polaroids, juice pickups, chests, eggs, jars, suitcases and clothing-source components, plus other NPCs.
 - **20 juices per season**, with five bottles of each season's four flavours.
@@ -99,7 +105,7 @@ Eight locations reuse existing NPC records, preserving their IDs, names and posi
 - Initial active status, object/component IDs, hierarchy, container ancestry and selected alternate NPC positions.
 - Both actual game map backgrounds: 25 tiles per season, stitched to 2560×2560 pixels.
 
-The interactive map covers Autumn and Winter. The CSV and JSON additionally contain 39 tutorial placements. Main-world marker counts: Autumn 1,249; Winter 1,229. These counts each include 91 shared markers (83 repairs and eight gacha machines), which are stored only once in JSON and CSV. Per-category counts are in `counts.json`.
+The interactive map covers Autumn and Winter. The CSV and JSON additionally contain 39 tutorial placements. Main-world marker counts: Autumn 1,251; Winter 1,231. These counts each include 91 shared markers (83 repairs and eight gacha machines), which are stored only once in JSON and CSV. Per-category counts are in `counts.json`.
 
 ## Data and accuracy
 
@@ -109,7 +115,7 @@ The map calls the `InteractableShrine` category **Jars**, matching the player-fa
 
 Juices include 20 collectible bottles per season: Autumn has five each of Apple, Grapefruit, Blueberry and Cherry; Winter has five each of Kiwi, Lime, Pomegranate and Watermelon. Both the bottle component and its object hierarchy must be active. Inactive opposite-season bottles and old shop displays are excluded; all retained bottles also reference active item objects. Each flavour is numbered #1–#5. These are guide labels, not game save IDs or a suggested collection order. Original Unity names, including prefab suffixes and typos, remain in `object_name` and the source hierarchy for traceability. Completion marks use stable marker IDs, so renumbering a bottle does not reset its mark.
 
-Quest repair links follow the repaired construct's enabled `BuildingQuestObject.OnBuilt` event to the exact quest's `CollectItem` method, corroborated by the quest's broken-construct reference. They are stored as quest `repair_ids` and reciprocal marker links with role `repair`. No location-proximity matching is used. Tobin's wind turbine is a lever-code puzzle, rather than one of these spanner repair quests.
+Quest repair links follow the repaired construct's enabled `BuildingQuestObject.OnBuilt` event to the exact quest's `CollectItem` method, corroborated by the quest's broken-construct reference. They are stored as quest `repair_ids` and reciprocal marker links with role `repair`. No location-proximity matching is used. Tobin's wind turbine is a lever-code puzzle; its manual and panel are stored as `guide_ids` with reciprocal `guide` links and verified scene positions. The two guide markers, quest and four lever components decoded to their exact byte lengths. The manual's compiled dialogue only displays its clue, without changing quest state.
 
 The assemblies describe object types and relationships; the Unity scene assets hold the actual instances and transforms. Parent translation, rotation and scale were composed to calculate world positions. No game code was executed to obtain these records, and the installed game files were not modified.
 
