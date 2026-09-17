@@ -2,32 +2,40 @@
   "Autumn": {
     "Chest": 49,
     "Quest pickup": 54,
-    "NPC": 231,
+    "NPC": 227,
     "Polaroid": 15,
     "Mushroom": 252,
-    "Shrine": 77,
+    "Jar": 77,
     "Egg": 35,
     "Bolt": 335,
-    "Juice": 25,
+    "Juice": 20,
     "Quest giver": 22,
     "Quest target": 9,
     "Suitcase": 22,
-    "Clothing source": 16
+    "Minigame": 4,
+    "Clothing source": 16,
+    "Repairable": 96,
+    "Stamp card shop": 8,
+    "Gacha machine": 8
   },
   "Winter": {
     "Chest": 44,
-    "NPC": 200,
+    "NPC": 196,
     "Mushroom": 240,
-    "Juice": 34,
+    "Juice": 20,
     "Quest pickup": 12,
-    "Shrine": 118,
+    "Jar": 118,
     "Bolt": 370,
     "Egg": 37,
     "Quest giver": 21,
     "Quest target": 7,
     "Suitcase": 23,
+    "Minigame": 4,
     "Polaroid": 15,
-    "Clothing source": 14
+    "Clothing source": 14,
+    "Repairable": 92,
+    "Stamp card shop": 8,
+    "Gacha machine": 8
   },
   "Autumn tutorial": {
     "Chest": 1,
@@ -35,11 +43,15 @@
     "Bolt": 7,
     "Suitcase": 1,
     "Mushroom": 9,
-    "Shrine": 2
+    "Jar": 2
   },
   "Winter tutorial": {
     "Bolt": 3,
     "NPC": 2,
     "Mushroom": 7
+  },
+  "Shared": {
+    "Repairable": 83,
+    "Gacha machine": 8
   }
 }
